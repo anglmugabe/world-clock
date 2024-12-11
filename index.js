@@ -24,6 +24,19 @@ function updateTime() {
 			"h:mm:ss [<small>]A[</small>]"
 		);
 	}
+
+	let mauritiusElement = document.querySelector("#mauritius");
+
+	if (cairoElement) {
+		let mauritiusDateElement = mauritiusElement.querySelector(".date");
+		let mauritiusTimeElement = mauritiusElement.querySelector(".time");
+		let mauritiusTime = moment().tz("Indian/Mauritius");
+
+		mauritiusDateElement.innerHTML = moment().format("MMMM Do YYYY");
+		mauritiusTimeElement.innerHTML = mauritiusTime.format(
+			"h:mm:ss [<small>]A[</small>]"
+		);
+	}
 }
 
 function updateCity(event) {
