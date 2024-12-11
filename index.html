@@ -6,49 +6,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="style.css" />
-        <script src=https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
         <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"> </script>
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"></script>
 
-
-
-        <title>World Clock - Angela Mugabe </title>
+        <title>World Clock - Angela Mugabe</title>
     </head>
 
     <body>
         <div class="container">
-            <h1> World Clock </h1>
+            <h1>World Clock</h1>
 
-            <select>
+            <select id="city">
                 <option value=" ">Select a city..</option>
-                <option value=" maputo">Maputo</option>
-                <option value=" johannesburg">Johannesburg</option>
-                <option value="newYork">New York</option>
-                <option value="nairobi">Nairobi</option>
+                <option value="Africa/Maputo">Maputo</option>
+                <option value="Africa/Johannesburg">Johannesburg</option>
+                <option value="America/New_York">New York</option>
+                <option value="Africa/Nairobi">Nairobi</option>
             </select>
 
-            <div class="city" id="kinshasa">
-                <div>
-                    <h2> Kinshasa</h2>
-                    <div class="date"></div>
+            <div id="cities">
+                <div class="city" id="kinshasa">
+                    <div>
+                        <h2>Kinshasa</h2>
+                        <div class="date"></div>
+                    </div>
+                    <div class="time"></div>
                 </div>
-                <div class="time"></div>
-            </div>
-            <div class="city" id="cairo">
-                <div>
-                    <h2> Cairo</h2>
-                    <div class="date"></div>
+                <div class="city" id="cairo">
+                    <div>
+                        <h2>Cairo</h2>
+                        <div class="date"></div>
+                    </div>
+                    <div class="time"></div>
                 </div>
-                <div class="time"></div>
             </div>
         </div>
+
         <footer>
-            This project was coded by Angela Mugabe and is open sourced on <a href="https://github.com/anglmugabe"
-                target="_blank">
-                GitHub </a>and hosted on <a href="https://relogioclockmundial.netlify.app/" target="_blank">
-                Netlify</a>
+            This project was coded by Angela Mugabe and is open sourced on
+            <a href="https://github.com/anglmugabe" target="_blank">GitHub</a>
+            and hosted on
+            <a href="https://relogioclockmundial.netlify.app/" target="_blank">Netlify</a>
         </footer>
-        <script src="index.js">  </script>
+        </div>
+
+        <script src="index.js"></script>
     </body>
 
 </html>
